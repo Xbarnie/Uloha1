@@ -79,9 +79,9 @@ public class App {
             e.printStackTrace();
         }
 
-///HISTORY s Fieldami
+
         Call<List<WeatherData>> historyWeatherWithFields = iotNode.getWeatherStationService()
-                .getHistoryWeather("station_1", "11/05/2020 11:00", "20/05/2020 15:00", List.of("time", "date",
+                .getHistoryWeather("station_1", "01/06/2020 10:00", "03/06/2020 15:00", List.of("time", "date",
                                 "airTemperature"));
 
         try {
@@ -99,7 +99,7 @@ public class App {
             e.printStackTrace();
         }
 
-        double a = iotNode.getAverageTemperature("station_1", "11/05/2020 11:00", "20/05/2020 15:00");
+        double a = iotNode.getAverageTemperature("station_1", "01/06/2020 10:00", "03/06/2020 15:00");
         System.out.println("Priemerná teplota je: " + a);
     }
 }

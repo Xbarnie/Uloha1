@@ -18,7 +18,7 @@ public class IotNode {
 
         retrofit = new Retrofit.Builder()
                 // Url adresa kde je umietnená WeatherStation služba
-                .baseUrl("http://ip172-18-0-79-br368m5im9m000a9t2m0-9000.direct.labs.play-with-docker.com/swagger/")
+                .baseUrl("http://ip172-18-0-5-brd2lkdim9m000crv3a0-9000.direct.labs.play-with-docker.com/swagger/")
                 // Na konvertovanie JSON objektu na java POJO použijeme
                 // Jackson knižnicu
                 .addConverterFactory(JacksonConverterFactory.create())
